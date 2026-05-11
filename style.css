@@ -1,15 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
-	--color-navy: #2a1b4b;
+	--color-navy: #25253f;
 	--color-slate: #4b5563;
-	--color-light: #f7f5fb;
+	--color-light: #f4f3f8;
 	--color-white: #ffffff;
 	--color-border: #e2e8f0;
-	--color-accent: #6b4fa8;
+	--color-accent: #6a5aa8;
 	--text-primary: var(--color-navy);
 	--text-muted: var(--color-slate);
-	--shadow-soft: 0 10px 30px rgba(42, 27, 75, 0.08);
+	--shadow-soft: 0 10px 30px rgba(37, 37, 63, 0.08);
 	--radius-md: 12px;
 	--radius-lg: 16px;
 }
@@ -20,12 +20,12 @@
 
 body {
 	margin: 0;
-	font-family: "Inter", "Roboto", system-ui, -apple-system, sans-serif;
-	background: linear-gradient(180deg, #f1edf7 0%, #ffffff 45%);
+	font-family: "Poppins", "Roboto", system-ui, -apple-system, sans-serif;
+	background: linear-gradient(180deg, #f1f0f7 0%, #ffffff 45%);
 	color: var(--text-primary);
 	line-height: 1.6;
 	min-height: 100vh;
-	border: 3px solid rgba(107, 79, 168, 0.32);
+	border: 3px solid rgba(106, 90, 168, 0.32);
 }
 
 header,
@@ -55,7 +55,7 @@ header {
 	width: 120px;
 	height: 120px;
 	border-radius: 50%;
-	border: 2px solid rgba(107, 79, 168, 0.2);
+	border: 2px solid rgba(106, 90, 168, 0.2);
 	background: var(--color-light);
 	overflow: hidden;
 	flex-shrink: 0;
@@ -152,9 +152,9 @@ section li {
 }
 
 .skills__tag {
-	background: rgba(107, 79, 168, 0.08);
+	background: rgba(106, 90, 168, 0.08);
 	color: var(--color-accent);
-	border: 1px solid rgba(107, 79, 168, 0.2);
+	border: 1px solid rgba(106, 90, 168, 0.2);
 	padding: 6px 12px;
 	border-radius: 999px;
 	font-size: 0.9rem;
@@ -176,6 +176,26 @@ section li {
 address {
 	font-style: normal;
 	color: var(--text-muted);
+}
+
+.contact__link {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	color: var(--color-accent);
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.contact__link:hover {
+	text-decoration: underline;
+}
+
+.contact__icon {
+	width: 16px;
+	height: 16px;
+	fill: currentColor;
+	flex-shrink: 0;
 }
 
 footer {
